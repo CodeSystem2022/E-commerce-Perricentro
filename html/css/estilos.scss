@@ -1,0 +1,72 @@
+@import url("https:'https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100&display=swap'");
+
+//fonts
+$font: 'Alegreya SC', serif;
+$font1: 'Roboto Slab', serif;
+$font2: 'IBM Plex Serif', serif;
+$font3: 'Cinzel Decorative', cursive;
+
+$proyectos: (
+    /*declaramos el mapa*/
+    proyect1: purple,
+    proyect2: gold,
+    proyect3: blue,
+);
+
+@each $proyect, $font in $proyectos {
+    .btn--#{$proyectos}{
+        background-color: #333;
+        text-shadow: 0 0 5px $font; 
+        font-family: 'Halant', serif;
+    }
+    
+};
+
+nav {
+    background-image: url(img/fondo\ moderno.jpeg);
+    width: 50%;
+    height: 100%; 
+    
+}
+
+nav :hover {
+    font-size: 22px;
+    text-decoration: none;
+    color:#082032;
+    text-shadow: 0 0 3px black;
+    transform: scale(0.5);
+    font-weight: bold;
+    padding: 0.4rem;
+    transform: scale(1);
+}
+.btn{
+
+}
+
+footer {
+    display: inline-block;
+    width: 200%;
+    position: absolute;
+    font-size: 15px;
+}
+
+h1 {
+    text-shadow: 5px 5px 10px #333;
+    font-family: 'Amita', cursive;;
+}
+
+$ancho: 720px;
+$alto: 200px;
+
+$var1: 100%;
+$var2: 50%;
+
+$xs: 16px;
+$small: 20px;
+$med: 40px;
+$large: 60px;
+$xl: 80px;
+
+
+
+

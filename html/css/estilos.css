@@ -1,0 +1,25 @@
+nav {
+  background-image: url(img/fondo\ moderno.jpeg);
+  width: 50%;
+  height: 100%;
+}
+
+nav :hover {
+  font-size: 22px;
+  text-decoration: none;
+  color: #082032;
+  text-shadow: 0 0 3px black;
+  transform: scale(0.5);
+  font-weight: bold;
+  padding: 0.4rem;
+  transform: scale(1);
+}
+
+footer {
+  display: inline-block;
+  width: 200%;
+  position: absolute;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
