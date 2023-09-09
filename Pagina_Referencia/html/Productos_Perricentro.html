@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Productos</title>
@@ -18,7 +17,7 @@
         }
 
         body{
-            background-image: url(img/);
+            background-color: beige;
             background-size: auto;
             background-position: center;
         
@@ -28,8 +27,7 @@
         
 
         nav {
-            background-image: url(img/);
-            width: 50%;
+            background-color: beige;
             height: 100%;
         }
 
@@ -48,13 +46,11 @@
             padding: 50px;
         }
 
-        img{
+        img {
             padding: 50px;
         }
 
-        iframe{
-            padding: 100px;
-        }
+
 
         footer {
             display: inline-block;
@@ -67,6 +63,7 @@
 
     </style>
     <header>
+
 
         <section class="container-fluid">
             <div class="row">
@@ -100,21 +97,142 @@
                     </nav>
     
             </section>
+    
+            <section class="contenido">
+            <div class="mostrador" id="mostrador">
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Hair_care_1.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Serum para el Cabello</p>
+                        <span class="precio">$ 5.180</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Hair_care_2.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Aceite para el Cabello</p>
+                        <span class="precio">$ 3.850</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Hair_care_3.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Elixir Argan para el Cabello</p>
+                        <span class="precio">$ 6.380</span>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Hair_care_model.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Nuestras cremas cumplen con todas las normas de belleza!</p>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Lips_care_1.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Labial liquido</p>
+                        <span class="precio">$ 6.450</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Lips_care_2.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Labial liquido</p>
+                        <span class="precio">$ 6.450</span>
+                    </div>
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Lips_care_model.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Nuestros labiales cumplen con todas las normas de belleza!</p>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Nails_care_1.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Esmaltes para uñas</p>
+                        <span class="precio">$ 3.490</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Nails_care_2.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Esmaltes Base Gel UV</p>
+                        <span class="precio">$ 5.990</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Nails_care_3.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Quita Esmaltes para uñas</p>
+                        <span class="precio">$ 8.290</span>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Skin_Care_1.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Kit cremas para la piel</p>
+                        <span class="precio">$ 16.000</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Skin_care_2.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Cremas Light Green para la piel</p>
+                        <span class="precio">$ 4.520</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Skin_care_3.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Crema Platinium Green para la piel</p>
+                        <span class="precio">$ 11.850</span>
+                    </div>   
+                    <div class="item">
+                        <div class="contenedor-foto">
+                            <img src="img/artculoscosmticosecommerceperricentro/Skin_Care_model.PNG" alt="">
+                        </div>
+                        <p class="descripcion">Nuestros cremas para el cuidado de la piel cumplen con todas las normas de belleza!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenedor del Item seleccionado -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#2715
+                </div>
+                <div class="info">
+                    <img src="img/artculoscosmticosecommerceperricentro/Hair_care_1.PNG" alt="" id="img">
+                    <h2 id="modelo">Serum para el Cabello</h2>
+                    <p id="descripcion">Descripcion...</p>
+
+                    <span class="precio" id="precio">$ 5.180</span>
+
+
+                    <div class="fila">
+                        <button>AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <script src="js/script.js"></script>
+
+        
 
     </header>
-    <br><br>
-    <br><br>
-
-    <br><br>
-    <br><br>
-    
-    <iframe width="800" height="600" src="https://www.youtube.com/" 
-    title="YouTube video player" frameborder="10px" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
-    
-    <br><br>
-    <br><br>
     <br><br>
     <br><br>
 
