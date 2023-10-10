@@ -23,7 +23,7 @@ const displayCart = () => {
     })
 
     const modalTitle = document.createElement("div");
-    modalTitle.innerText = "Cart";
+    modalTitle.innerText = "Carrito";
     modalTitle.className = "modal-title";
     modalHeader.append(modalTitle);
 
@@ -104,7 +104,7 @@ const displayCart = () => {
 }else{
     const modalText = document.createElement("h2");
     modalText.className = "modal-body";
-    modalText.innerText = "your cart is empty";
+    modalText.innerText = "El carrito está vacío";
     modalContainer.append(modalText);
 }    
 };
