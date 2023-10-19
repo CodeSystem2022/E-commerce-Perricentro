@@ -1,0 +1,22 @@
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: bisque;
+    padding: 2px;
+}
+
+.card-text{
+    text-align: center;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+.text-body-secondary{
+    text-align: justify;
+    color: black;
+    background-color: beige;
+}
+.text-body-terciary{
+    text-align: justify;
+}
