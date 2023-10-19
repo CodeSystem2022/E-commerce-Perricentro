@@ -1,4 +1,17 @@
 {
+  "name": "e-commerce-perricentro",
+  "description": "![Ecommerce](https://github.com/Perricornios/E-commerce-Perricentro/assets/92758405/729abae1-602a-4514-bd02-17803e629f08)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
   "dependencies": {
     "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.2",
@@ -12,4 +25,5 @@
     "eslint": "^8.51.0",
     "nodemon": "^3.0.1"
   }
+  
 }
