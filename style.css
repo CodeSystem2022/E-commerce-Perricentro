@@ -43,7 +43,7 @@ header a:hover {
     outline: 0;
     padding: 10px;
     color: white;
-    background-color: #1bcb7f;
+    background-color: rgb(204, 116, 8);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -118,8 +118,6 @@ header a:hover {
     margin-bottom: 20px;
     text-align: center;
 }
-
-/*Se añaden los estilos que corresponden al video 2*/
 
 /*modal body*/
 .modal-body {
