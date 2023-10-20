@@ -17,23 +17,65 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-light bg-light">
-
-        <!--Barra de Busqueda-->
-        <div class="mx-auto">
-            <form class="form-inline">
-                <div class="input-group">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar productos"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </div>
-            </form>
-        </div>
-        <!--Fin Barra de Busqueda-->
-    </nav>
     <header>
+        <!--Inicio Barra de Búsqueda-->
+        <style>
+          :root {
+            --color-fondo-Search: #FFEBD7;
+            --color-primario-Search: #E7BC92;
+            --color-secundario-Search: #CE9B68;
+            --color-terciario-Search: #B2783F;
+          }
+          .custom-search-bar {
+              text-align: center;
+              max-width: 500px;
+              margin: 1 auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
 
+          .custom-input-group {
+              display: flex;
+              border: 1px solid var(--color-secundario-Search);
+              border-radius: 5px;
+              overflow: hidden;
+              background-color: white;
+          }
+
+          .custom-form-control {
+              flex: 1;
+              padding : 10px 100px;
+              border: none;
+              font-size: 16px;
+              background-color: transparent;
+          }
+
+          .custom-search-button {
+              background-color: var(--color-terciario-Search);
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 0 5px 5px 0;
+              cursor: pointer;
+              font-size: 16px;
+          }
+
+          /* Estilos para el botón de búsqueda al pasar el ratón */
+          .custom-search-button:hover {
+              background-color: var(--color-primario-Search);
+          }
+        </style>
+        <div class="custom-search-bar">
+          <form class="form-inline">
+              <div class="custom-input-group">
+                  <input class="custom-form-control" type="search" placeholder="Buscar productos,marcas..." aria-label="Search">
+                  <button class="custom-search-button" type="submit">Buscar</button>
+              </div>
+          </form>
+        </div>
+        <!--Fin Barra de Búsqueda-->
+        
         <a href="">CONTACTO</a>
         <a href="#productos">PRODUCTOS</a>
         <a href="pages/servicios.html">SERVICIOS</a>
