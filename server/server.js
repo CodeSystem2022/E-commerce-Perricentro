@@ -15,11 +15,11 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "../")));
 app.use(cors());
-
+// inicia una primera ruta
 app.get("/", function () {
     path.resolve(__dirname, "..", "index.html");
 });
-
+// crea una preferencia
 app.post("/create_preference", (req, res) => {
 
     let preference = {
@@ -48,7 +48,7 @@ app.post("/create_preference", (req, res) => {
             console.log(error);
         });
 });
-
+// feedback - estado de la compra para el usuario
 app.get('/feedback', function (req, res) {
     res.json({
         Payment: req.query.payment_id,
