@@ -62,4 +62,4 @@ const productos = [
         quanty: 1,
         img: "media/img/arreglo-bano-jabon-toalla.jpg",
     }
-]
+];

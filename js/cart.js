@@ -20,7 +20,7 @@ const displayCart = () => {
     modalClose.addEventListener("click", () => {
         modalContainer.style.display = "none";
         modalOverlay.style.display = "none";
-    })
+    });
 
     const modalTitle = document.createElement("div");
     modalTitle.innerText = "Carrito";
@@ -68,7 +68,7 @@ const displayCart = () => {
             product.quanty++;
             displayCart();
             displayCartCounter();
-        })
+        });
 
 
     
@@ -76,8 +76,8 @@ const displayCart = () => {
     const deleteProduct = modalBody.querySelector(".delete-product");
 
     deleteProduct.addEventListener("click", ()=> {
-        deleteCartProduct(product.id)
-    })
+        deleteCartProduct(product.id);
+    });
 });
     //modal footer
     const total = cart.reduce((acc,el) => acc + el.price * el.quanty, 0);
