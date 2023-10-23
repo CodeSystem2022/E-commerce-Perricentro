@@ -6,7 +6,7 @@ const path = require("path"); // redirige a los directorios que se necesitan al 
 
 // REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel
 mercadopago.configure({
-    access_token: "APP_USR-4961290398089399-091717-850d39f560c325d3b8b9b8c0841cb7db-1482274743", 
+    access_token: "TEST-7310268341684962-091715-a9b24aab9e0424e1d6a24b94e9060088-173949830", 
 });
 
 

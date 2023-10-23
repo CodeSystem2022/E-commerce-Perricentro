@@ -95,7 +95,7 @@ const displayCart = () => {
     modalContainer.append(modalFooter);
 
     //mp;
-    const mercadopago = new MercadoPago("public_key", {
+    const mercadopago = new MercadoPago("TEST-ec5fdf64-a196-4293-a18c-8c6a2f871f45", {
         locale: "es-AR",
     }); //inicia una instancia de Mercado Pago
 
