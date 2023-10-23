@@ -19,6 +19,7 @@
     "express-promise-router": "^4.1.1",
     "jsonwebtoken": "^9.0.2",
     "md5": "^2.3.0",
+    "mercadopago": "^2.0.2",
     "pg": "^8.11.3"
   },
   "devDependencies": {

@@ -20,7 +20,7 @@ const displayCart = () => {
     modalClose.addEventListener("click", () => {
         modalContainer.style.display = "none";
         modalOverlay.style.display = "none";
-    })
+    });
 
     const modalTitle = document.createElement("div");
     modalTitle.innerText = "Carrito";
@@ -68,7 +68,7 @@ const displayCart = () => {
             product.quanty++;
             displayCart();
             displayCartCounter();
-        })
+        });
 
 
     
@@ -76,8 +76,8 @@ const displayCart = () => {
     const deleteProduct = modalBody.querySelector(".delete-product");
 
     deleteProduct.addEventListener("click", ()=> {
-        deleteCartProduct(product.id)
-    })
+        deleteCartProduct(product.id);
+    });
 });
     //modal footer
     const total = cart.reduce((acc,el) => acc + el.price * el.quanty, 0);
@@ -95,7 +95,7 @@ const displayCart = () => {
     modalContainer.append(modalFooter);
 
     //mp;
-    const mercadopago = new MercadoPago("public_key", {
+    const mercadopago = new MercadoPago("TEST-ec5fdf64-a196-4293-a18c-8c6a2f871f45", {
         locale: "es-AR",
     }); //inicia una instancia de Mercado Pago
 
@@ -104,14 +104,14 @@ const displayCart = () => {
     checkoutButton.addEventListener("click", function (){
 
         checkoutButton.remove(); //remueve el boton checkout para evitar dobles comprar
-
+        // se genera la orden de compra
         const orderData = {
             quantity: 1,
-            description: "compra de ecomerce",
+            description: "Compra de E-Comerce Perricentro",
             price: total,
         };
 
-        fetch("http://localhost:8080/create_preference", {
+        fetch("http://localhost:3000/create_preference", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
