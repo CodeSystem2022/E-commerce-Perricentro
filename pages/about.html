@@ -5,8 +5,8 @@
     <title>Ecommerce Perricentro</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./media/perricornio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../media/perricornio.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Vinculo la letra-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,8 +28,8 @@
           }
           .custom-search-bar {
               text-align: center;
-              max-width: 500px;
-              margin: 1 auto;
+              max-width: 400px;
+              margin: 0 auto;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -45,7 +45,7 @@
 
           .custom-form-control {
               flex: 1;
-              padding : 10px 100px;
+              padding : 10px;
               border: none;
               font-size: 16px;
               background-color: transparent;
@@ -65,6 +65,42 @@
           .custom-search-button:hover {
               background-color: var(--color-primario-Search);
           }
+          /* Estilos para la página "Acerca de" */
+            .about-page {
+                text-align: center;
+                padding: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .about-title {
+                font-size: 36px;
+                font-weight: bold;
+                color: var(--color-terciario);
+                margin-bottom: 20px;
+            }
+
+            .about-content {
+                font-size: 18px;
+                color: #555;
+                text-align: left;
+                line-height: 1.6;
+                padding: 20px;
+            }
+
+            .about-image {
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            }
+          
+
+          
         </style>
         <div class="custom-search-bar">
           <form class="form-inline">
@@ -79,57 +115,28 @@
         <a href="">CONTACTO</a>
         <a href="#productos">PRODUCTOS</a>
         <a href="pages/servicios.html">SERVICIOS</a>
-        <a href="pages/about.html">NOSOTROS</a>
+        <a href="#about">NOSOTROS</a>
     </header>
 
 
-    <!-- Carrusel de artículos destacados -->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/media/img/Hair_care_1.PNG" class="d-block w-100" alt="producto_1">
-          </div>
-          <div class="carousel-item">
-            <img src="/media/img/Skin_care_2.PNG" class="d-block w-100" alt="producto_2">
-          </div>
-          <div class="carousel-item">
-            <img src="/media/img/Skin_care_3.PNG" class="d-block w-100" alt="producto_3">
-          </div>
+    <div class="about-page" id="about">
+        <div class="about-title">Acerca de Perricentro Spa</div>
+        <div class="about-content">
+            <p>Perricentro Spa es una empresa con una larga trayectoria en proporcionar servicios de spa y masajes de alta calidad en nuestras instalaciones. Durante años, hemos sido un destino de relajación y rejuvenecimiento para nuestros clientes.</p>
+
+            <p>En respuesta a la creciente demanda de llevar la experiencia de spa a casa, hemos ampliado nuestra oferta y ahora ofrecemos una amplia gama de productos de spa de primera calidad. Nuestros productos están diseñados para brindar la misma sensación de bienestar y relajación que experimentas en nuestro spa.</p>
+
+            <p>En Perricentro Spa, creemos en la importancia de cuidarse a uno mismo y relajarse en cualquier momento. Nuestros productos te permitirán disfrutar de un spa de calidad en la comodidad de tu hogar.</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-
-
-    <!-- Listado de Productos -->
-    <div class="container" id="productos">
-
-        <div class="card-products-container">
-            <div class="card-products" id="shopContent"> </div>
-        </div>
-        <!--cart-btn-->
-        <div class="cart-btn" id="cart-btn">🛒</div>
-
-        <!--modal-->
-        <div class="modal-overlay" id="modal-overlay"></div>
-        <div class="modal-container" id="modal-container"></div>
-
+        <img src="../media/about1.PNG" alt="Instalaciones de Perricentro Spa" class="about-image">
     </div>
 
-    <script src="index.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!--Vinculo con Bootstrap-->
 
-    <script src="js/products.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/cart.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
