@@ -104,14 +104,14 @@ const displayCart = () => {
     checkoutButton.addEventListener("click", function (){
 
         checkoutButton.remove(); //remueve el boton checkout para evitar dobles comprar
-
+        // se genera la orden de compra
         const orderData = {
             quantity: 1,
-            description: "compra de ecomerce",
+            description: "Compra de E-Comerce Perricentro",
             price: total,
         };
 
-        fetch("http://localhost:8080/create_preference", {
+        fetch("http://localhost:3000/create_preference", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
