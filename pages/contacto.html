@@ -1,41 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seccion Contacto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seccion Contacto</title>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #ffebd7, #ffdebe);
+      padding: 15px;
+      margin: 10px;
+      
+    }
+
+    div.contenedor-formulario {
+      border-radius: 5px;
+      background-color: #ffebd7;
+      padding: 20px;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+      width: 100%;
+      background-color: #ce9b68;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover,
+    input[type=reset]:hover {
+      background-color: #b2783f;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    textarea,
+    fieldset {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #b2783f;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+
+    .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+    div.otrocontacto {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+          
+        }
+        
+
+  </style>
+
 </head>
+
 <body>
-        <fieldset>
-        <legend>
-          CONTACTO/ 
-        </legend>
-        <form>
+  <div class="contenedor-formulario">
+    <fieldset>
+      <legend>
+        CONTACTO/
+      </legend>
+      <form>
         <label for="nombreUsuario">NOMBRE:*</label><br>
-        <input type="text" name="nombreUsuario" id="inputNombreUsuario" placeholder="Ingresa tu nombre aca" required><br><br>
+        <input type="text" name="nombreUsuario" id="inputNombreUsuario" placeholder="Ingresa tu nombre aca"
+          required><br><br>
         <label for="email">EMAIL:*</label><br>
         <input type="email" name="email" id="email" placeholder="El e-mail que más usas aca" required><br><br>
-        <label for="telefono">TELEFONO (OPCIONAL) </label><br>
-        <input type= "number" placeholder="Ingresa aca tu celular"><br><br>
+        <label for="telefono">TELEFONO (OPCIONAL)</label><br>
+        <input type="number" placeholder="Ingresa aca tu celular"><br><br>
         <label for="mensaje">DEJA TU MENSAJE:</label><br>
-        <textarea placeholder="Dejanos acá tu mensaje" name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br><br>
-        <input type="submit"><br><br>
+        <textarea placeholder="Dejanos acá tu mensaje" name="mensaje" id="mensaje"></textarea><br><br>
+        <label for="motivo">Motivo de contacto:</label>
+        <input type="radio" id="motivo" name="motivo"><i>Turnos</i>
+        <input type="radio" id="motivo" name="motivo"><i>Consultas</i>
+        <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+        <br><br>
+        <input type="submit" value="Enviar"><br><br>
         <input type="reset">
       </form><br>
-
-      <!--Identificador por id para volver a un lugar especifico de mi pagina-->
-      <a href="">Volver al inicio</a><br><br><br>
-      </fieldset>
+    </fieldset>
+  </div>
+  <br>
+  <!--Identificador por id para volver a un lugar especifico de mi pagina-->
+  <a href="./../index.html">Volver al inicio</a><br>
+  <br>
+  <hr>
+  <h2 class="centrado">TAMBIÉN CONTACTANOS POR ESTOS CANALES</h2>
+  <br>
+  <div class="centrado">
+    <div class="otrocontacto">
       <h3>INGRESA A NUESTRAS REDES SOCIALES</h3>
-      <a href="https://www.facebook.com/profile.php?id=61551368114492&mibextid=ZbWKwL">Facebook</a>
-      <h3>NUESTRO TELEFONO</h3>
-      <H4>011555666333</H4>
-      <H3>HORARIOS</H3>
-      <H4>LUNES A VIERNES DE 11:00 A 20:00 HS</H4>
-      <h4>SABADOS DE 09:00 A 17:00 HS</h4>
-      <H3>FORMAS DE PAGO</H3>
-      <H4>TODOS LOS MEDIOS DE PAGO A TRAVÉS DE MERCADO PAGO</H4>
+      <p class="centrado"><a href="https://www.facebook.com/profile.php?id=61551368114492&mibextid=ZbWKwL" target="_blank">Facebook</a></p>
+    </div>
 
-      
+    <div class="otrocontacto">
+      <h3>NUESTRO TELEFONO</h3>
+      <h4>011555666333</h4>
+
+    </div>
+    
+    <div class="otrocontacto">
+      <h3>HORARIOS</h3>
+      <h4>LUNES A VIERNES DE 11:00 A 20:00 HS</h4>
+      <h4>SABADOS DE 09:00 A 17:00 HS</h4>
+    </div>
+    <div class="otrocontacto">
+      <h3>FORMAS DE PAGO</h3>
+      <h4>TODOS LOS MEDIOS DE PAGO A TRAVÉS DE MERCADO PAGO</h4>
+    </div>
+    
+  </div>
 </body>
+
 </html>
