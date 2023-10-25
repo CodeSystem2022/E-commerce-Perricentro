@@ -20,10 +20,10 @@ const displayCart = () => {
     modalClose.addEventListener("click", () => {
         modalContainer.style.display = "none";
         modalOverlay.style.display = "none";
-    });
+    })
 
     const modalTitle = document.createElement("div");
-    modalTitle.innerText = "Carrito";
+    modalTitle.innerText = "Cart";
     modalTitle.className = "modal-title";
     modalHeader.append(modalTitle);
 
@@ -68,7 +68,7 @@ const displayCart = () => {
             product.quanty++;
             displayCart();
             displayCartCounter();
-        });
+        })
 
 
     
@@ -76,8 +76,8 @@ const displayCart = () => {
     const deleteProduct = modalBody.querySelector(".delete-product");
 
     deleteProduct.addEventListener("click", ()=> {
-        deleteCartProduct(product.id);
-    });
+        deleteCartProduct(product.id)
+    })
 });
     //modal footer
     const total = cart.reduce((acc,el) => acc + el.price * el.quanty, 0);
@@ -88,30 +88,30 @@ const displayCart = () => {
     modalFooter.className = "modal-footer";
     modalFooter.innerHTML = `
     <div class = "total-price">Total: ${total}</div>
-    <button class"btn-primary" id="checkout-btn"> go to checkout</button> 
+    <button class = "btn-primary" id="checkout-btn"> go to checkout</button> 
     <div id="button-checkout"></div>
     `; // boton que lleva al checkout y dispara el evento de mercadopago
 
     modalContainer.append(modalFooter);
 
     //mp;
-    const mercadopago = new MercadoPago("TEST-ec5fdf64-a196-4293-a18c-8c6a2f871f45", {
+    const mercadopago = new MercadoPago("APP_USR-5edee690-9d67-4f22-b564-0bffaa7bf97a", {
         locale: "es-AR",
     }); //inicia una instancia de Mercado Pago
 
-    const checkoutButton = modalFooter.querySelector("checkout-btn"); //capturamos el boton para el evento click y ejecutar
+    const checkoutButton = modalFooter.querySelector("#checkout-btn"); //capturamos el boton para el evento click y ejecutar
 
     checkoutButton.addEventListener("click", function (){
 
         checkoutButton.remove(); //remueve el boton checkout para evitar dobles comprar
-        // se genera la orden de compra
+
         const orderData = {
             quantity: 1,
-            description: "Compra de E-Comerce Perricentro",
+            description: "compra de ecomerce",
             price: total,
         };
 
-        fetch("http://localhost:3000/create_preference", {
+        fetch("http://localhost:8080/create_preference", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -154,11 +154,10 @@ const displayCart = () => {
         window.checkoutButton = renderComponent(bricksBuilder);
     }
 
-
 }else{
     const modalText = document.createElement("h2");
     modalText.className = "modal-body";
-    modalText.innerText = "El carrito está vacío";
+    modalText.innerText = "your cart is empty";
     modalContainer.append(modalText);
 }    
 };

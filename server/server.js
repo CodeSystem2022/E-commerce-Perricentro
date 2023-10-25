@@ -2,24 +2,24 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mercadopago = require("mercadopago");
-const path = require("path"); // redirige a los directorios que se necesitan al momento de arrancar el servidor
+const path = require("path");
 
 // REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel
 mercadopago.configure({
-    access_token: "TEST-7310268341684962-091715-a9b24aab9e0424e1d6a24b94e9060088-173949830", 
+    access_token: "APP_USR-8005534317430798-091718-b982966f21e5ad67337aec6868ccafbb-1483636744",
 });
 
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-// express se dirige a la carpeta 
-app.use(express.static(path.join(__dirname, "../")));
+
+app.use(express.static(path.join(__dirname, "../cliente")));
 app.use(cors());
-// inicia una primera ruta resuelta por path
+
 app.get("/", function () {
-    path.resolve(__dirname, "..", "..", "index.html");
-});
-// crea una preferencia
+    path.resolve(__dirname, "..", "cliente", "index.html");
+}); 
+
 app.post("/create_preference", (req, res) => {
 
     let preference = {
@@ -31,8 +31,8 @@ app.post("/create_preference", (req, res) => {
             }
         ],
         back_urls: {
-            "success": "http://localhost:3000",
-            "failure": "http://localhost:3000",
+            "success": "http://localhost:8080",
+            "failure": "http://localhost:8080",
             "pending": ""
         },
         auto_return: "approved",
@@ -48,7 +48,7 @@ app.post("/create_preference", (req, res) => {
             console.log(error);
         });
 });
-// feedback - estado de la compra para el usuario
+
 app.get('/feedback', function (req, res) {
     res.json({
         Payment: req.query.payment_id,
@@ -57,6 +57,6 @@ app.get('/feedback', function (req, res) {
     });
 });
 
-app.listen(3000, () => {
-    console.log("The server is now running on Port 3000");
+app.listen(8080, () => {
+    console.log("The server is now running on Port 8080");
 });
