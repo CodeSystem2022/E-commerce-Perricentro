@@ -3,4 +3,6 @@
 
 
 # Instrucciones de Uso Para lanzar el sistema 
-- se debe abrir dos consolas, en la primera nos dirigimos a server y ejecutamos " npm start " esto iniciará el frontend en la dirección http://localhost:8080/ . La segunda terminal nos dirigiremos a servidor_pern y ejecutamos " node index.js " esto iniciará el backend en la dirección http://localhost:3000/
+SE DEBEN ABRIR DOS CONSOLAS
+- PARA EL FRONT: nos dirigimos a server y ejecutamos " npm start " esto iniciará el frontend en la dirección http://localhost:8080/ .
+- PARA EL BACK: nos dirigiremos a servidor_pern y ejecutamos " node index.js " esto iniciará el backend en la dirección http://localhost:3000/
