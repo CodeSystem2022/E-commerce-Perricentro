@@ -87,15 +87,15 @@ const displayCart = () => {
     const modalFooter = document.createElement("div");
     modalFooter.className = "modal-footer";
     modalFooter.innerHTML = `
-    <div class = "total-price">Total: ${total}</div>
-    <button class = "btn-primary" id="checkout-btn"> go to checkout</button> 
+    <div class = "total-price">Total: $ ${total} </div>
+    <button class = "btn-primary" id="checkout-btn"> Pagar </button> 
     <div id="button-checkout"></div>
     `; // boton que lleva al checkout y dispara el evento de mercadopago
 
     modalContainer.append(modalFooter);
 
     //mp;
-    const mercadopago = new MercadoPago("APP_USR-5edee690-9d67-4f22-b564-0bffaa7bf97a", {
+    const mercadopago = new MercadoPago("TEST-ec5fdf64-a196-4293-a18c-8c6a2f871f45", {
         locale: "es-AR",
     }); //inicia una instancia de Mercado Pago
 
