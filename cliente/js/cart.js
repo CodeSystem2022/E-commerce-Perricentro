@@ -157,7 +157,7 @@ const displayCart = () => {
 }else{
     const modalText = document.createElement("h2");
     modalText.className = "modal-body";
-    modalText.innerText = "your cart is empty";
+    modalText.innerText = "El carrito está vacío";
     modalContainer.append(modalText);
 }    
 };
