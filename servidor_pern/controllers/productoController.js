@@ -21,7 +21,7 @@ export const modificarProducto = async (req, res, next) => {
 
   try {
     const result = await pool.query(
-      'UPDATE productos SET product_Name = $1, price = $2, quanty = $3, img = $4 WHERE id = $5 RETURNING *',
+      'UPDATE productos SET product_name = $1, price = $2, quanty = $3, img = $4 WHERE id = $5 RETURNING *',
       [product_name, price, quanty, img, id]
     );
 
