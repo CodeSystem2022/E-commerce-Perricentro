@@ -17,12 +17,12 @@ export const agregarProducto = async (req, res, next) => {
 
 export const modificarProducto = async (req, res, next) => {
   const id = req.params.id;
-  const { productName, price, quanty, img } = req.body;
+  const { product_name, price, quanty, img } = req.body;
 
   try {
     const result = await pool.query(
-      'UPDATE productos SET productName = $1, price = $2, quanty = $3, img = $4 WHERE id = $5 RETURNING *',
-      [productName, price, quanty, img, id]
+      'UPDATE productos SET product_Name = $1, price = $2, quanty = $3, img = $4 WHERE id = $5 RETURNING *',
+      [product_name, price, quanty, img, id]
     );
 
     if (result.rows.length === 0) {
