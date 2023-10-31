@@ -5,7 +5,7 @@ export const pool = new pg.Pool({
     port: 5432,
     host: "localhost",
     user: "postgres",
-    password: "bcosimano/*5948",
+    password: "admin",
     database: "PERRICENTRO",
 });
 
