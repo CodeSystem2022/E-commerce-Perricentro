@@ -1,20 +1,32 @@
 header {
+    align-items: center;
     display: flex;
     justify-content: flex-end;
     background-color: bisque;
 }
 
 header a {
+    align-items: center;
+    align-content: center;
     list-style: none;
     text-decoration: none;
     padding: 14PX 20px;
     color: blueviolet;
 }
 
+
 header a:hover {
     background-color: aquamarine;
     color: #fff;
 }
+
+header img{
+    margin-bottom: auto;
+    width: 250px;
+    height: 75px;
+    padding: 14PX 20px;
+}
+
 
 .mx-auto{
     margin-left: 0;
