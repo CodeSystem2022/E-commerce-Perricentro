@@ -39,7 +39,7 @@ const displayCart = () => {
         <div class = "product">
             <img class = "product-img" src="${product.img}" />
             <div class = "product-info">
-                <h4>${product.productName}</h4>
+                <h4>${product.product_name}</h4>
             </div>
             <div class = "quantity">
                 <span class = "quantity-btn-decrese">-</span>
