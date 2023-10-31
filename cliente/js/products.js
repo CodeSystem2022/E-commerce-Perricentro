@@ -1,4 +1,4 @@
-const productos = [
+/* const productos = [
     {
         id: 1,
         productName: "Bálsamo emulsión",
@@ -63,3 +63,5 @@ const productos = [
         img: "media/img/arreglo-bano-jabon-toalla.jpg",
     }
 ];
+
+*/
