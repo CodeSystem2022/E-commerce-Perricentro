@@ -23,7 +23,7 @@ const displayCart = () => {
     })
 
     const modalTitle = document.createElement("div");
-    modalTitle.innerText = "Cart";
+    modalTitle.innerText = "Carrito";
     modalTitle.className = "modal-title";
     modalHeader.append(modalTitle);
 
@@ -125,7 +125,7 @@ const displayCart = () => {
                 createCheckoutButton(preference.id);
             })
             .catch(function () {
-                alert("Unexpected error"); 
+                alert("Error inesperado"); 
             });
     });
     
