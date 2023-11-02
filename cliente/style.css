@@ -1,7 +1,7 @@
 header {
-    align-items: center;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     background-color: bisque;
 }
 
@@ -200,8 +200,11 @@ header img{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1300px) {
 
+    header{
+        flex-direction: column;
+    }
     /*media query para responsividad*/
     .product-img {
         display: none;
