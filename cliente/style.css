@@ -1,7 +1,7 @@
 header {
-    align-items: center;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     background-color: bisque;
 }
 
@@ -200,8 +200,11 @@ header img{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1300px) {
 
+    header{
+        flex-direction: column;
+    }
     /*media query para responsividad*/
     .product-img {
         display: none;
@@ -256,4 +259,30 @@ header img{
 
 #button-checkout {
     z-index: 10;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    background-color: #E7BC92;
+}
+
+.nosotros{
+    background-color: #FFE4C4;
+}
+
+.nosotros a{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.nosotros a:hover{
+    background-color: #fff;
+    color: black;
+    margin: 3px;
 }
