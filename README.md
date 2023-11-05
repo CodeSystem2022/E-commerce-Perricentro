@@ -7,7 +7,7 @@
 
 2 - Restaurar la copia de la base de datos o bien inicializarla con el script
 ```
-- Backup con productos precargados /servidor_pern/database/backups/PERRICENTRO.sql
+- Backup con productos precargados /backups/backup_db.sql
 - Script para inicializar la base desde cero /servidor_pern/database/init.sql
 ```
 
