@@ -73,12 +73,9 @@ Remplazar id_producto por el id del producto a modificar + los artibutos en form
 ```
 PUT: http://localhost:3000/api/productos/id_producto
 ```
-Para Cargar un producto
-```
-POST: http://localhost:3000/api/productos/
-+ Body en formato JSON con la estructura del producto sin id
-```
+
 ### Estructura producto json
+```
 {
  "id": 1, (Solo para modificar, para cargar no se ingresa id)
  "product_name": "Aceite de algas",
