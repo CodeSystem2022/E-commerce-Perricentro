@@ -7,7 +7,7 @@
 
 2 - Restaurar la copia de la base de datos o bien inicializarla con el script
 ```
-- Backup con productos precargados /servidor_pern/database/backups/PERRICENTRO.sql
+- Backup con productos precargados /backups/backup_db.sql
 - Script para inicializar la base desde cero /servidor_pern/database/init.sql
 ```
 
@@ -67,15 +67,17 @@ GET: http://localhost:3000/api/productos/?id=id_producto
 ```
 Remplazar id_producto por el id del producto a eliminar
 ```
-DELETE: http://localhost:3000/api/productos/?id=id_producto
+DELETE: http://localhost:3000/api/productos/id_producto
 ```
 Remplazar id_producto por el id del producto a modificar + los artibutos en formato json a modificar
 ```
-PUT: http://localhost:3000/api/productos/?id=id_producto
+PUT: http://localhost:3000/api/productos/id_producto
 ```
+
 ### Estructura producto json
 ```
 {
+ "id": 1, (Solo para modificar, para cargar no se ingresa id)
  "product_name": "Aceite de algas",
  "price": 45000,
  "quanty": 1,
